@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Thin geometric U arc centered inside 66dp safe zone -->
+    <path
+        android:pathData="M36,34 L36,56 C36,66.5 44,74 54,74 C64,74 72,66.5 72,56 L72,34"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4.5"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000" />
+    <!-- Subtle geometric dot above center -->
+    <path
+        android:fillColor="#3B82F6"
+        android:pathData="M54,36m-3.2,0a3.2,3.2 0,1 1,6.4 0a3.2,3.2 0,1 1,-6.4 0" />
+</vector>

@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 100% Offline App: Zero INTERNET permission -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name=".UniDeckApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UniDeck">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.UniDeck" />
+
+        <!-- 12 Minimal Adaptive Vector Launcher Icons -->
+        <!-- Row 1: Minimal Core -->
+        <activity-alias
+            android:name=".IconDark"
+            android:enabled="true"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".IconWhite"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_white"
+            android:roundIcon="@mipmap/ic_launcher_white"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".IconMono"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_mono"
+            android:roundIcon="@mipmap/ic_launcher_mono"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".IconGlass"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_glass"
+            android:roundIcon="@mipmap/ic_launcher_glass"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <!-- Row 2: Minimal Animals -->
+        <activity-alias
+            android:name=".IconKitty"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_kitty"
+            android:roundIcon="@mipmap/ic_launcher_kitty"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".IconDoggo"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_doggo"
+            android:roundIcon="@mipmap/ic_launcher_doggo"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".IconBird"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_bird"
+            android:roundIcon="@mipmap/ic_launcher_bird"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".IconChameleon"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_chameleon"
+            android:roundIcon="@mipmap/ic_launcher_chameleon"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <!-- Row 3: More Animals -->
+        <activity-alias
+            android:name=".IconFox"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_fox"
+            android:roundIcon="@mipmap/ic_launcher_fox"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".IconPanda"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_panda"
+            android:roundIcon="@mipmap/ic_launcher_panda"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".IconBear"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_bear"
+            android:roundIcon="@mipmap/ic_launcher_bear"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".IconOwl"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_owl"
+            android:roundIcon="@mipmap/ic_launcher_owl"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <!-- Row 4: Minimal Objects -->
+        <activity-alias
+            android:name=".IconNeon"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_neon"
+            android:roundIcon="@mipmap/ic_launcher_neon"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".IconBotanical"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_botanical"
+            android:roundIcon="@mipmap/ic_launcher_botanical"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".IconSunset"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_sunset"
+            android:roundIcon="@mipmap/ic_launcher_sunset"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".IconMinimal"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_minimal"
+            android:roundIcon="@mipmap/ic_launcher_minimal"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".IconPenguin"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_penguin"
+            android:roundIcon="@mipmap/ic_launcher_penguin"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".IconBee"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_bee"
+            android:roundIcon="@mipmap/ic_launcher_bee"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".IconLadybug"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_ladybug"
+            android:roundIcon="@mipmap/ic_launcher_ladybug"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".IconFlamingo"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_flamingo"
+            android:roundIcon="@mipmap/ic_launcher_flamingo"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".IconGiraffe"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_giraffe"
+            android:roundIcon="@mipmap/ic_launcher_giraffe"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".IconCrocodile"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_crocodile"
+            android:roundIcon="@mipmap/ic_launcher_crocodile"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".IconTurtle"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_turtle"
+            android:roundIcon="@mipmap/ic_launcher_turtle"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".IconWhale"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_whale"
+            android:roundIcon="@mipmap/ic_launcher_whale"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".IconParrot"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_parrot"
+            android:roundIcon="@mipmap/ic_launcher_parrot"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".IconPig"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_pig"
+            android:roundIcon="@mipmap/ic_launcher_pig"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".IconMouse"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_mouse"
+            android:roundIcon="@mipmap/ic_launcher_mouse"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".IconSheep"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_sheep"
+            android:roundIcon="@mipmap/ic_launcher_sheep"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".IconClownfish"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_clownfish"
+            android:roundIcon="@mipmap/ic_launcher_clownfish"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".IconLlama"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_llama"
+            android:roundIcon="@mipmap/ic_launcher_llama"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".IconBeetle"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_beetle"
+            android:roundIcon="@mipmap/ic_launcher_beetle"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".IconChicken"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_chicken"
+            android:roundIcon="@mipmap/ic_launcher_chicken"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".IconSpider"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_spider"
+            android:roundIcon="@mipmap/ic_launcher_spider"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".IconHorse"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_horse"
+            android:roundIcon="@mipmap/ic_launcher_horse"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".IconBull"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_bull"
+            android:roundIcon="@mipmap/ic_launcher_bull"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".IconPlatypus"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_platypus"
+            android:roundIcon="@mipmap/ic_launcher_platypus"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".IconGorilla"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_gorilla"
+            android:roundIcon="@mipmap/ic_launcher_gorilla"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".IconBeaver"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_beaver"
+            android:roundIcon="@mipmap/ic_launcher_beaver"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".IconScholar"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_scholar"
+            android:roundIcon="@mipmap/ic_launcher_scholar"
+            android:label="@string/app_name"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <!-- Offline Class Reminder & Reboot Receivers -->
+        <receiver
+            android:name=".notifications.ClassReminderReceiver"
+            android:exported="false" />
+
+        <receiver
+            android:name=".notifications.BootCompletedReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Jetpack Glance Home Screen Widgets -->
+        <receiver
+            android:name=".widget.TodaysClassesWidgetReceiver"
+            android:exported="true"
+            android:label="@string/widget_todays_classes_label">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_todays_classes_info" />
+        </receiver>
+
+        <receiver
+            android:name=".widget.AttendanceGpaWidgetReceiver"
+            android:exported="true"
+            android:label="@string/widget_snapshot_label">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_snapshot_info" />
+        </receiver>
+
+        <receiver
+            android:name=".widget.NextClassAttendanceWidgetReceiver"
+            android:exported="true"
+            android:label="@string/widget_next_class_label">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_next_class_info" />
+        </receiver>
+    </application>
+</manifest>

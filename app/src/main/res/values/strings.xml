@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">UniDeck</string>
+    <string name="widget_todays_classes_label">UniDeck — Today\'s Classes</string>
+    <string name="widget_todays_classes_desc">Shows today\'s scheduled classes, time, and room directly on your home screen.</string>
+    <string name="widget_snapshot_label">UniDeck — Attendance &amp; GPA</string>
+    <string name="widget_snapshot_desc">Displays overall attendance percentage and current SGPA at a glance.</string>
+    <string name="widget_next_class_label">UniDeck — Next Class &amp; Today</string>
+    <string name="widget_next_class_desc">Shows your next scheduled class and today\'s attendance percentage on your home screen.</string>
+    <string name="channel_class_reminders_name">Class Reminders</string>
+    <string name="channel_class_reminders_desc">Offline alerts before scheduled lectures, labs, and tutorials.</string>
+    <string name="channel_attendance_alerts_name">Attendance Alerts</string>
+    <string name="channel_attendance_alerts_desc">Warnings when a course drops below your minimum attendance target.</string>
+    <string name="tab_attendance">Attendance</string>
+    <string name="tab_scores">Scores</string>
+    <string name="tab_grades">Grades</string>
+    <string name="nav_timetable">Timetable</string>
+    <string name="nav_settings">Settings</string>
+    <string name="action_add_course">Add Course</string>
+    <string name="empty_no_classes_today">No classes today</string>
+</resources>

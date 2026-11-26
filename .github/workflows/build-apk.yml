@@ -1,0 +1,146 @@
+name: Build UniDeck APK
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - "v*"
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-apk:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Accept Android SDK Licenses
+        run: |
+          yes | ${ANDROID_HOME}/cmdline-tools/latest/bin/sdkmanager --licenses || true
+
+      - name: Decode Signing Keystores from Base64 Secrets
+        env:
+          KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
+          DEBUG_KEYSTORE_BASE64: ${{ secrets.DEBUG_KEYSTORE_BASE64 }}
+        run: |
+          # 1. Decode Debug Keystore from GitHub Secret (DEBUG_KEYSTORE_BASE64) or tracked debug.keystore.base64
+          if [ -n "${DEBUG_KEYSTORE_BASE64}" ]; then
+            echo "${DEBUG_KEYSTORE_BASE64}" | tr -d '\r\n ' | base64 -d > debug.keystore
+          elif [ -f debug.keystore.base64 ]; then
+            tr -d '\r\n ' < debug.keystore.base64 | base64 -d > debug.keystore
+          elif [ ! -f debug.keystore ]; then
+            keytool -genkeypair -v \
+              -keystore debug.keystore \
+              -storepass android \
+              -alias androiddebugkey \
+              -keypass android \
+              -keyalg RSA \
+              -keysize 2048 \
+              -validity 10000 \
+              -dname "CN=Android Debug,O=Android,C=US"
+          fi
+
+          # 2. Decode Release Keystore from GitHub Secret (KEYSTORE_BASE64) to default my-upload-key.jks
+          #    so Gradle's release signingConfig works remotely without a local KEYSTORE_PATH variable
+          if [ -n "${KEYSTORE_BASE64}" ]; then
+            echo "${KEYSTORE_BASE64}" | tr -d '\r\n ' | base64 -d > my-upload-key.jks
+          else
+            cp debug.keystore my-upload-key.jks
+          fi
+
+          # 3. Ensure .env exists for Secrets Gradle Plugin
+          if [ ! -f .env ]; then
+            if [ -f .env.example ]; then
+              cp .env.example .env
+            else
+              touch .env
+            fi
+          fi
+
+      - name: Make Gradle Wrapper executable
+        run: chmod +x ./gradlew
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Assemble Signed APK
+        env:
+          STORE_PASSWORD: ${{ secrets.STORE_PASSWORD != '' && secrets.STORE_PASSWORD || 'android' }}
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD != '' && secrets.KEY_PASSWORD || 'android' }}
+          KEY_ALIAS: ${{ secrets.KEY_ALIAS != '' && secrets.KEY_ALIAS || 'upload' }}
+        run: |
+          ./gradlew assembleDebug --no-daemon --stacktrace
+          if [ -n "${{ secrets.KEYSTORE_BASE64 }}" ] && [ -n "${{ secrets.STORE_PASSWORD }}" ] && [ -n "${{ secrets.KEY_PASSWORD }}" ]; then
+            ./gradlew assembleRelease --no-daemon --stacktrace
+          fi
+
+      - name: Prepare APK Artifacts
+        run: |
+          mkdir -p dist
+          cp app/build/outputs/apk/debug/*.apk dist/UniDeck-debug.apk
+          if ls app/build/outputs/apk/release/*.apk >/dev/null 2>&1; then
+            cp app/build/outputs/apk/release/*.apk dist/UniDeck-release.apk
+          fi
+
+      - name: Clean Up Decoded Keystores
+        if: always()
+        run: |
+          rm -f my-upload-key.jks debug.keystore
+
+      - name: Upload APK Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: UniDeck-apk
+          path: dist/*.apk
+          if-no-files-found: error
+
+      # Versioned release when you push a tag like v1.0.0
+      - name: Publish GitHub Release (tag)
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          files: dist/*.apk
+          generate_release_notes: true
+
+      # Rolling "latest" release on every push to main
+      - name: Move 'latest' tag to this commit
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git tag -f latest
+          git push -f origin latest
+
+      - name: Publish GitHub Release (latest)
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: softprops/action-gh-release@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: latest
+          target_commitish: ${{ github.sha }}
+          name: UniDeck (latest build)
+          prerelease: true
+          files: dist/*.apk
+          body: "Automatic build from the latest commit on main (${{ github.sha }})."

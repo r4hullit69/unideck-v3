@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Floppy warm-brown ears -->
+    <path
+        android:fillColor="#B87A4B"
+        android:pathData="M34,39 C27,40 25,49 26.5,60 C27.5,66 32.5,67 35.5,62 L38,44 Z" />
+    <path
+        android:fillColor="#B87A4B"
+        android:pathData="M74,39 C81,40 83,49 81.5,60 C80.5,66 75.5,67 72.5,62 L70,44 Z" />
+    <!-- Cream minimal head -->
+    <path
+        android:fillColor="#F7E4C8"
+        android:pathData="M54,34 C66,34 74,43 74,56 C74,69 65.5,77.5 54,77.5 C42.5,77.5 34,69 34,56 C34,43 42,34 54,34 Z" />
+    <!-- Subtle warm eye patch -->
+    <path
+        android:fillColor="#DFB78D"
+        android:pathData="M43,53m-7.5,0a7.5,7.5 0,1 1,15 0a7.5,7.5 0,1 1,-15 0" />
+    <!-- Minimal eyes -->
+    <path
+        android:fillColor="#2B1E16"
+        android:pathData="M44,53m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0" />
+    <path
+        android:fillColor="#2B1E16"
+        android:pathData="M64,53m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0" />
+    <!-- Rounded dog nose & smile -->
+    <path
+        android:fillColor="#2B1E16"
+        android:pathData="M49,61 C49,59 59,59 59,61 C59,64 56.2,66.2 54,66.2 C51.8,66.2 49,64 49,61 Z" />
+    <path
+        android:pathData="M50,69.5 C52,71.2 56,71.2 58,69.5"
+        android:strokeColor="#2B1E16"
+        android:strokeWidth="2.2"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000" />
+</vector>

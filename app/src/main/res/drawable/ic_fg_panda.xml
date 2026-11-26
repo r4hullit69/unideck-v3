@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Panda ears -->
+    <path
+        android:fillColor="#212529"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="3.2"
+        android:pathData="M36,38m-8,0a8,8 0,1 1,16 0a8,8 0,1 1,-16 0 M72,38m-8,0a8,8 0,1 1,16 0a8,8 0,1 1,-16 0" />
+    <!-- White head -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="3.2"
+        android:pathData="M32,56 C32,41 41,34 54,34 C67,34 76,41 76,56 C76,70 67,77 54,77 C41,77 32,70 32,56 Z" />
+    <!-- Eye patches -->
+    <path
+        android:fillColor="#212529"
+        android:pathData="M43,53m-6.5,0a6.5,5.5 0,1 1,13 0a6.5,5.5 0,1 1,-13 0 M65,53m-6.5,0a6.5,5.5 0,1 1,13 0a6.5,5.5 0,1 1,-13 0" />
+    <path android:fillColor="#FFFFFF" android:pathData="M44,52m-2.2,0a2.2,2.2 0,1 1,4.4 0a2.2,2.2 0,1 1,-4.4 0 M64,52m-2.2,0a2.2,2.2 0,1 1,4.4 0a2.2,2.2 0,1 1,-4.4 0" />
+    <!-- Nose & rosy cheeks -->
+    <path android:fillColor="#212529" android:pathData="M50,61 L58,61 L54,66 Z" />
+    <path android:fillColor="#FF8FA3" android:pathData="M39,62m-2.8,0a2.8,2.8 0,1 1,5.6 0a2.8,2.8 0,1 1,-5.6 0 M69,62m-2.8,0a2.8,2.8 0,1 1,5.6 0a2.8,2.8 0,1 1,-5.6 0" />
+</vector>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Gorilla head & ears -->
+    <path
+        android:fillColor="#343A40"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="3.2"
+        android:pathData="M31,52m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0 M77,52m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0 M33,55 C33,38 42,31 54,31 C66,31 75,38 75,55 C75,69 66,77 54,77 C42,77 33,69 33,55 Z" />
+    <!-- Lighter face mask & broad jaw -->
+    <path
+        android:fillColor="#6C757D"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="2.8"
+        android:pathData="M39,51 C39,44 48,43 54,46 C60,43 69,44 69,51 C69,56 67,58 70,63 C70,71 62,75 54,75 C46,75 38,71 38,63 C41,58 39,56 39,51 Z" />
+    <path android:fillColor="#1A1A1A" android:pathData="M46,51m-2.5,0a2.5,2.5 0,1 1,5 0a2.5,2.5 0,1 1,-5 0 M62,51m-2.5,0a2.5,2.5 0,1 1,5 0a2.5,2.5 0,1 1,-5 0 M50,61m-2.2,0a2.2,2.2 0,1 1,4.4 0a2.2,2.2 0,1 1,-4.4 0 M58,61m-2.2,0a2.2,2.2 0,1 1,4.4 0a2.2,2.2 0,1 1,-4.4 0" />
+</vector>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Wings -->
+    <path
+        android:fillColor="#E0F7FA"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="3"
+        android:pathData="M46,42 C38,28 50,24 54,36 C58,24 70,28 62,42 Z" />
+    <!-- Yellow bee body -->
+    <path
+        android:fillColor="#FFD13B"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="3.2"
+        android:pathData="M33,57 C33,45 42,39 54,39 C66,39 75,45 75,57 C75,69 66,75 54,75 C42,75 33,69 33,57 Z" />
+    <!-- Bold stripes -->
+    <path
+        android:fillColor="#1A1A1A"
+        android:pathData="M48,39.5 L53,39.5 L53,74.5 L48,74.5 Z M60,40.5 L65,40.5 L65,73.5 L60,73.5 Z" />
+    <!-- Cute face & stinger -->
+    <path android:fillColor="#1A1A1A" android:pathData="M41,54m-2.8,0a2.8,2.8 0,1 1,5.6 0a2.8,2.8 0,1 1,-5.6 0" />
+    <path android:fillColor="#FF758F" android:pathData="M39,60m-2.6,0a2.6,2.6 0,1 1,5.2 0a2.6,2.6 0,1 1,-5.2 0" />
+    <path
+        android:fillColor="#1A1A1A"
+        android:pathData="M75,54 L81,57 L75,60 Z" />
+</vector>

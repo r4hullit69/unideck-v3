@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Red parrot body -->
+    <path
+        android:fillColor="#FA5252"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="3.2"
+        android:pathData="M36,54 C36,36 45,29 56,31 C67,33 72,44 70,62 C68,74 58,79 47,77 C39,75 36,66 36,54 Z" />
+    <!-- Colorful wing (yellow + blue) -->
+    <path
+        android:fillColor="#FAB005"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="2.8"
+        android:pathData="M48,50 C58,48 67,56 64,70 C54,72 46,63 48,50 Z" />
+    <path
+        android:fillColor="#228BE6"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="2.6"
+        android:pathData="M53,58 C60,57 65,62 63,72 C56,72 52,65 53,58 Z" />
+    <!-- White eye patch & golden beak -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="2.6"
+        android:pathData="M46,43m-5.5,0a5.5,5.5 0,1 1,11 0a5.5,5.5 0,1 1,-11 0" />
+    <path android:fillColor="#1A1A1A" android:pathData="M46,43m-2.5,0a2.5,2.5 0,1 1,5 0a2.5,2.5 0,1 1,-5 0" />
+    <path
+        android:fillColor="#FFD43B"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="2.8"
+        android:strokeLineJoin="round"
+        android:pathData="M38,40 C30,41 29,50 37,52 Z" />
+</vector>

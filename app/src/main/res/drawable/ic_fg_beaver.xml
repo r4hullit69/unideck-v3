@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Small round ears & brown head -->
+    <path
+        android:fillColor="#8A5A44"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="3.2"
+        android:pathData="M37,38m-5.5,0a5.5,5.5 0,1 1,11 0a5.5,5.5 0,1 1,-11 0 M71,38m-5.5,0a5.5,5.5 0,1 1,11 0a5.5,5.5 0,1 1,-11 0 M33,55 C33,41 42,35 54,35 C66,35 75,41 75,55 C75,68 66,75 54,75 C42,75 33,68 33,55 Z" />
+    <!-- Two big white front teeth -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="2.8"
+        android:pathData="M48,63 L54,63 L54,74 L48,74 Z M54,63 L60,63 L60,74 L54,74 Z" />
+    <!-- Chubby cheeks & dark nose -->
+    <path
+        android:fillColor="#D4A373"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="2.8"
+        android:pathData="M41,59 C41,54 54,54 54,60 C54,54 67,54 67,59 C67,65 59,66 54,62 C49,66 41,65 41,59 Z" />
+    <path android:fillColor="#1A1A1A" android:pathData="M54,55m-4,0a4,4 0,1 1,8 0a4,4 0,1 1,-8 0 M45,48m-2.6,0a2.6,2.6 0,1 1,5.2 0a2.6,2.6 0,1 1,-5.2 0 M63,48m-2.6,0a2.6,2.6 0,1 1,5.2 0a2.6,2.6 0,1 1,-5.2 0" />
+</vector>

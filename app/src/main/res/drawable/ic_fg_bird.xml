@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Warm amber beak -->
+    <path
+        android:fillColor="#FFB020"
+        android:pathData="M73,43 L83,46.5 L73,50 Z" />
+    <!-- Minimal geometric cyan songbird body -->
+    <path
+        android:fillColor="#26D9FF"
+        android:pathData="M28,67 C34,67 39,62 42,56 C44,44 52,35 63,35 C70,35 75,40 75,47 C75,62 63,75 45,75 C37,75 31,72 28,67 Z" />
+    <!-- Crisp white geometric wing -->
+    <path
+        android:fillColor="#F2FAFF"
+        android:pathData="M43,53 C51,51 59,54 63,60 C55,66 45,66 39,61 Z" />
+    <!-- Minimal dark eye -->
+    <path
+        android:fillColor="#102235"
+        android:pathData="M65,44.5m-2.8,0a2.8,2.8 0,1 1,5.6 0a2.8,2.8 0,1 1,-5.6 0" />
+</vector>

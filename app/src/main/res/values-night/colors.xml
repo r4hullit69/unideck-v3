@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material You Widget Preview Tokens (Dark fallback for API 26-30) -->
+    <color name="widget_preview_surface">#FF13161E</color>
+    <color name="widget_preview_surface_variant">#FF1E2433</color>
+    <color name="widget_preview_primary">#FF99B9FF</color>
+    <color name="widget_preview_on_primary">#FF0A2152</color>
+    <color name="widget_preview_primary_container">#FF223663</color>
+    <color name="widget_preview_on_primary_container">#FFDCE6FF</color>
+    <color name="widget_preview_secondary_container">#FF232B3D</color>
+    <color name="widget_preview_on_secondary_container">#FFD7E2FA</color>
+    <color name="widget_preview_on_surface">#FFF2F4FA</color>
+    <color name="widget_preview_on_surface_variant">#FFA7B1C6</color>
+</resources>

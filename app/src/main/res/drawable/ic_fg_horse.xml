@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Ears & dark mane -->
+    <path
+        android:fillColor="#5C3A21"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="3"
+        android:pathData="M41,38 L38,27 L47,33 Z M67,38 L70,27 L61,33 Z M47,32 C51,26 57,26 61,32 L54,42 Z" />
+    <!-- Chestnut horse head -->
+    <path
+        android:fillColor="#B06535"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="3.2"
+        android:pathData="M37,49 C37,37 44,33 54,33 C64,33 71,37 71,49 C71,66 64,77 54,77 C44,77 37,66 37,49 Z" />
+    <!-- White blaze & muzzle -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M51,38 L57,38 L55,56 L53,56 Z" />
+    <path
+        android:fillColor="#E6B89C"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="2.8"
+        android:pathData="M41,64 C41,56 67,56 67,64 C67,73 61,77 54,77 C47,77 41,73 41,64 Z" />
+    <path android:fillColor="#1A1A1A" android:pathData="M44,48m-2.6,0a2.6,2.6 0,1 1,5.2 0a2.6,2.6 0,1 1,-5.2 0 M64,48m-2.6,0a2.6,2.6 0,1 1,5.2 0a2.6,2.6 0,1 1,-5.2 0 M49,65m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0 M59,65m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0" />
+</vector>

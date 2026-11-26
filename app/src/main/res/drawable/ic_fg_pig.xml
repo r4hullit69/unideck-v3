@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Floppy pig ears -->
+    <path
+        android:fillColor="#FF85A1"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="3.2"
+        android:strokeLineJoin="round"
+        android:pathData="M34,42 L31,29 L45,34 Z M74,42 L77,29 L63,34 Z" />
+    <!-- Round pink head -->
+    <path
+        android:fillColor="#FFA8C2"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="3.2"
+        android:pathData="M32,55 C32,41 41,33 54,33 C67,33 76,41 76,55 C76,69 67,77 54,77 C41,77 32,69 32,55 Z" />
+    <!-- Snout -->
+    <path
+        android:fillColor="#FF7096"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="3"
+        android:pathData="M43,59 C43,53 65,53 65,59 C65,66 43,66 43,59 Z" />
+    <path android:fillColor="#1A1A1A" android:pathData="M50,59m-2.2,0a2.2,2.2 0,1 1,4.4 0a2.2,2.2 0,1 1,-4.4 0" />
+    <path android:fillColor="#1A1A1A" android:pathData="M58,59m-2.2,0a2.2,2.2 0,1 1,4.4 0a2.2,2.2 0,1 1,-4.4 0" />
+    <path android:fillColor="#1A1A1A" android:pathData="M44,48m-2.8,0a2.8,2.8 0,1 1,5.6 0a2.8,2.8 0,1 1,-5.6 0" />
+    <path android:fillColor="#1A1A1A" android:pathData="M64,48m-2.8,0a2.8,2.8 0,1 1,5.6 0a2.8,2.8 0,1 1,-5.6 0" />
+</vector>

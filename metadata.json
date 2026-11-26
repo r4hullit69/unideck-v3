@@ -1,0 +1,6 @@
+{
+  "name": "UniDeck",
+  "description": "100% offline-first native Android college academic suite combining Attendance Tracker, Timetable & PDF Viewer, Exam Score Recorder, SGPA/CGPA Calculator, and Compose Canvas Insights.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Crocodile head & snout -->
+    <path
+        android:fillColor="#2B8A3E"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="3.2"
+        android:strokeLineJoin="round"
+        android:pathData="M28,60 C28,48 39,46 46,46 C47,37 56,34 65,37 C72,39 78,47 78,59 C78,69 68,73 51,73 C36,73 28,69 28,60 Z" />
+    <!-- White teeth -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="2.2"
+        android:pathData="M36,64 L40,70 L44,64 Z M47,64 L51,70 L55,64 Z M58,64 L62,70 L66,64 Z" />
+    <!-- Eye ridge & pupil -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="2.6"
+        android:pathData="M58,44m-5.5,0a5.5,5.5 0,1 1,11 0a5.5,5.5 0,1 1,-11 0" />
+    <path android:fillColor="#1A1A1A" android:pathData="M58,44m-2.5,0a2.5,2.5 0,1 1,5 0a2.5,2.5 0,1 1,-5 0" />
+    <path android:fillColor="#1A1A1A" android:pathData="M36,55m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0" />
+</vector>

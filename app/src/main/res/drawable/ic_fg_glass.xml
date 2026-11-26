@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Frosted translucent overlapping rounded card -->
+    <path
+        android:fillColor="#2AFFFFFF"
+        android:strokeColor="#66FFFFFF"
+        android:strokeWidth="1.4"
+        android:pathData="M34,27 L74,27 C78.4,27 82,30.6 82,35 L82,73 C82,77.4 78.4,81 74,81 L34,81 C29.6,81 26,77.4 26,73 L26,35 C26,30.6 29.6,27 34,27 Z" />
+    <!-- Secondary frosted overlapping U shadow -->
+    <path
+        android:pathData="M39,36 L39,56 C39,64.5 45.7,71 54,71 C62.3,71 69,64.5 69,56 L69,36"
+        android:strokeColor="#44FFFFFF"
+        android:strokeWidth="12"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000" />
+    <!-- Crisp translucent white U -->
+    <path
+        android:pathData="M39,36 L39,56 C39,64.5 45.7,71 54,71 C62.3,71 69,64.5 69,56 L69,44"
+        android:strokeColor="#F2FFFFFF"
+        android:strokeWidth="7.5"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000" />
+    <path
+        android:fillColor="#9AD0FF"
+        android:pathData="M69,35.5m-4,0a4,4 0,1 1,8 0a4,4 0,1 1,-8 0" />
+</vector>

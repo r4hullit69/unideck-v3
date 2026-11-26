@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Tail & fins -->
+    <path
+        android:fillColor="#FF6B35"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="3.2"
+        android:strokeLineJoin="round"
+        android:pathData="M68,54 L81,42 L81,66 Z M46,41 C49,31 59,31 61,41 Z" />
+    <!-- Orange fish body -->
+    <path
+        android:fillColor="#FF6B35"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="3.2"
+        android:pathData="M27,54 C27,42 38,37 51,37 C64,37 72,44 72,54 C72,64 64,71 51,71 C38,71 27,66 27,54 Z" />
+    <!-- White clownfish bands -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="2.8"
+        android:pathData="M43,38 C46,48 46,60 43,70 L49,70 C52,60 52,48 49,38 Z M59,39.5 C61,49 61,59 59,68.5 L65,67 C67,58 67,50 65,41 Z" />
+    <path android:fillColor="#1A1A1A" android:pathData="M36,51m-2.6,0a2.6,2.6 0,1 1,5.2 0a2.6,2.6 0,1 1,-5.2 0" />
+</vector>

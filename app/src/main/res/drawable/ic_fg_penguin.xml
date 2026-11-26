@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Penguin body with bold dark outline -->
+    <path
+        android:fillColor="#2D3748"
+        android:strokeColor="#111827"
+        android:strokeWidth="3.2"
+        android:strokeLineJoin="round"
+        android:pathData="M34,54 C34,37 42,29 54,29 C66,29 74,37 74,54 C74,69 67,78 54,78 C41,78 34,69 34,54 Z" />
+    <!-- White belly & face mask -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#111827"
+        android:strokeWidth="2.6"
+        android:pathData="M41,56 C41,45 45,39 54,43 C63,39 67,45 67,56 C67,68 62,75 54,75 C46,75 41,68 41,56 Z" />
+    <!-- Rosy cheeks -->
+    <path android:fillColor="#FF8FA3" android:pathData="M43,53m-3.2,0a3.2,3.2 0,1 1,6.4 0a3.2,3.2 0,1 1,-6.4 0" />
+    <path android:fillColor="#FF8FA3" android:pathData="M65,53m-3.2,0a3.2,3.2 0,1 1,6.4 0a3.2,3.2 0,1 1,-6.4 0" />
+    <!-- Eyes -->
+    <path android:fillColor="#111827" android:pathData="M45,48m-2.8,0a2.8,2.8 0,1 1,5.6 0a2.8,2.8 0,1 1,-5.6 0" />
+    <path android:fillColor="#111827" android:pathData="M63,48m-2.8,0a2.8,2.8 0,1 1,5.6 0a2.8,2.8 0,1 1,-5.6 0" />
+    <!-- Orange beak & feet -->
+    <path
+        android:fillColor="#FF9F1C"
+        android:strokeColor="#111827"
+        android:strokeWidth="2.6"
+        android:strokeLineJoin="round"
+        android:pathData="M49,51 L59,51 L54,58 Z" />
+    <path
+        android:fillColor="#FF9F1C"
+        android:strokeColor="#111827"
+        android:strokeWidth="2.4"
+        android:pathData="M42,77 C39,77 37,79 40,81 L48,81 C50,79 47,77 42,77 Z M66,77 C61,77 58,79 60,81 L68,81 C71,79 69,77 66,77 Z" />
+</vector>

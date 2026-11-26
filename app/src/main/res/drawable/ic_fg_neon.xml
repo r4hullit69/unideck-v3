@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Subtle outer electric blue glow stroke -->
+    <path
+        android:pathData="M36,33 L36,56 C36,66.5 44,74 54,74 C64,74 72,66.5 72,56 L72,33"
+        android:strokeColor="#4D8EFF"
+        android:strokeWidth="12"
+        android:strokeAlpha="0.32"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000" />
+    <!-- Primary electric blue U stroke -->
+    <path
+        android:pathData="M36,33 L36,56 C36,66.5 44,74 54,74 C64,74 72,66.5 72,56 L72,33"
+        android:strokeColor="#4D8EFF"
+        android:strokeWidth="7.2"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000" />
+    <!-- Inner cyan neon core stroke -->
+    <path
+        android:pathData="M36,33 L36,56 C36,66.5 44,74 54,74 C64,74 72,66.5 72,56 L72,44"
+        android:strokeColor="#26D9FF"
+        android:strokeWidth="2.8"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000" />
+    <path
+        android:fillColor="#26D9FF"
+        android:pathData="M72,33m-3.6,0a3.6,3.6 0,1 1,7.2 0a3.6,3.6 0,1 1,-7.2 0" />
+</vector>

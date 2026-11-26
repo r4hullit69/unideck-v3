@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Big round mouse ears -->
+    <path
+        android:fillColor="#868E96"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="3.2"
+        android:pathData="M37,39m-11,0a11,11 0,1 1,22 0a11,11 0,1 1,-22 0 M71,39m-11,0a11,11 0,1 1,22 0a11,11 0,1 1,-22 0" />
+    <path android:fillColor="#FFA8C2" android:pathData="M37,39m-6,0a6,6 0,1 1,12 0a6,6 0,1 1,-12 0 M71,39m-6,0a6,6 0,1 1,12 0a6,6 0,1 1,-12 0" />
+    <!-- Mouse head -->
+    <path
+        android:fillColor="#ADB5BD"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="3.2"
+        android:pathData="M35,54 C35,41 43,36 54,36 C65,36 73,41 73,54 C73,67 61,76 54,76 C47,76 35,67 35,54 Z" />
+    <!-- Eyes, whiskers & pink nose -->
+    <path android:fillColor="#1A1A1A" android:pathData="M46,53m-2.6,0a2.6,2.6 0,1 1,5.2 0a2.6,2.6 0,1 1,-5.2 0" />
+    <path android:fillColor="#1A1A1A" android:pathData="M62,53m-2.6,0a2.6,2.6 0,1 1,5.2 0a2.6,2.6 0,1 1,-5.2 0" />
+    <path
+        android:fillColor="#FF7096"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="2.4"
+        android:pathData="M54,65m-4,0a4,4 0,1 1,8 0a4,4 0,1 1,-8 0" />
+</vector>

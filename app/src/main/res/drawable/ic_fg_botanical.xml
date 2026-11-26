@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Minimal soft mint botanical sprout / dual leaves -->
+    <path
+        android:fillColor="#7CF2B8"
+        android:pathData="M54,60 C54,43 63,32 77,31 C76,47 68,58 54,60 Z" />
+    <path
+        android:fillColor="#2DD4BF"
+        android:pathData="M54,63 C54,50 46,41 32,40 C33,53 41,62 54,63 Z" />
+    <!-- Clean center stem -->
+    <path
+        android:pathData="M54,77 L54,57 M54,57 L64,45"
+        android:strokeColor="#D9FFF0"
+        android:strokeWidth="3.6"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000" />
+</vector>

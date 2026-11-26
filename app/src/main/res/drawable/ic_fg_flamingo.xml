@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Flamingo neck, head & body -->
+    <path
+        android:fillColor="#FF5C8D"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="3.2"
+        android:strokeLineJoin="round"
+        android:pathData="M46,35 C46,29 57,29 57,37 C57,44 48,50 48,57 C55,54 73,56 73,67 C73,75 61,78 48,76 C40,74 37,67 41,58 C43,51 49,44 49,38 C49,36 46,36 46,35 Z" />
+    <!-- Wing -->
+    <path
+        android:fillColor="#FF8FB1"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="2.6"
+        android:pathData="M49,64 C49,60 64,60 66,67 C63,72 49,71 49,64 Z" />
+    <!-- Curved beak -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="2.6"
+        android:pathData="M46,34 L37,37 L39,43 L46,39 Z" />
+    <path android:fillColor="#1A1A1A" android:pathData="M37,37 L35,43 L39,43 Z" />
+    <path android:fillColor="#1A1A1A" android:pathData="M51,35m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0" />
+</vector>
