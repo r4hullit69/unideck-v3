@@ -1,48 +1,82 @@
-# UniDeck
+<div align="center">
 
-A 100% offline, privacy-first personal academic manager for Android built with Kotlin, Jetpack Compose, and Material 3. Designed to track multi-semester attendance, recurring timetables, internal/end-semester exam scores, and cumulative SGPA/CGPA.
+# 🎓 UniDeck
 
----
+**Offline-first university academic companion for Android — built with Kotlin, Jetpack Compose, and Material You.**
 
-## Core Features
+[![Platform](https://img.shields.io/badge/Platform-Android_8.0%2B-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com)
+[![Kotlin](https://img.shields.io/badge/Kotlin-2.0%2B-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)](https://kotlinlang.org)
+[![Jetpack Compose](https://img.shields.io/badge/Jetpack_Compose-Material_3-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white)](https://developer.android.com/jetpack/compose)
+[![Architecture](https://img.shields.io/badge/Architecture-Offline--First_Room-000000?style=for-the-badge)](https://developer.android.com/training/data-storage/room)
+[![Latest Release](https://img.shields.io/github/v/release/r4hullit69/unideck-v3?style=for-the-badge&color=6750A4&label=Download_APK)](https://github.com/r4hullit69/unideck-v3/releases/latest)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/r4hullit69/unideck-v3/build-apk.yml?style=for-the-badge&label=CI_Build)](https://github.com/r4hullit69/unideck-v3/actions)
 
-### Attendance & Timetable
-* **Daily Timeline & Course Views:** Switch between a date-based vertical class timeline (`Today`) and an overall course health dashboard (`Courses`) with safe-bunk and recovery lecture math.
-* **Semester Date Boundaries:** Configure optional start and end dates per semester so recurring schedules automatically pause outside active term windows.
-* **One-Click Logging & Bulk Actions:** Mark individual classes as *Present*, *Absent*, or *Cancelled*, or batch-update an entire day with *Mark All Present* and *Holiday* toggles.
-* **Professor Autocomplete:** Offline prefix/substring autocomplete populated from previously entered faculty names across all saved semesters.
-* **Glance Widget & Reminders:** 4×2 Jetpack Glance home-screen widget displaying today's schedule alongside local `AlarmManager` class and deadline alerts.
+[Download Latest APK](https://github.com/r4hullit69/unideck-v3/releases/latest) • [Features](#-core-features) • [Architecture](#%EF%B8%8F-architecture--tech-stack) • [Local Setup](#%EF%B8%8F-building-locally)
 
-### Exam Scores & Grade Simulator
-* **Theory & Lab Breakdowns:** Track Mid-Sem/Internal, Quizzes, Assignments, and End-Sem marks across `50/50` Theory and `60/40` Lab evaluation schemes.
-* **Target Grade Calculator:** Live end-semester score targets showing exact marks needed for `A+` through `D` (or flagging unreachable cutoffs).
-* **Interactive What-If SGPA/CGPA Simulator:** Tap grade pills (`A+` to `E`) to simulate live semester SGPA, cumulative CGPA, and equivalent percentage across custom decimal credits (`0`, `1.5`, `2`, `3`, `4`, or custom values).
-* **Multi-Semester History & Archive Lock:** Automatically protects completed semesters in read-only mode while aggregating credit-weighted CGPA across all saved terms.
-
-### Appearance & Customization
-* **Material 3 / Material You:** Supports System, Dark, and Light themes, Pure `#000000` AMOLED dark mode, Android 12+ Dynamic Wallpaper colors (Monet), and `System` / `Plus Jakarta Sans` typography.
-* **16 Accent Swatches:** Clean 4×4 color grid generating balanced tonal palettes.
-* **16 Adaptive Launcher Icons:** Switchable `<activity-alias>` monochrome and minimal vector icons directly from Settings.
-
-### Offline Data & Automated Backups
-* **Zero Network Permissions:** No analytics, no cloud sync, and no external API dependencies—all records stay locally in a Room SQLite database.
-* **Manual & Daily Auto-Backups:** Export/import complete academic records as portable `.json` files, or schedule silent daily rolling backups to a user-selected local folder via `WorkManager` and Storage Access Framework (SAF).
+</div>
 
 ---
 
-## Tech Stack
+## ✨ Overview
 
-* **Language:** Kotlin
-* **UI:** Jetpack Compose, Material 3, Jetpack Glance (App Widgets)
-* **Local Persistence:** Room (SQLite with non-destructive migrations), Jetpack DataStore (Preferences)
-* **Background Work:** WorkManager, `AlarmManager`, Storage Access Framework (`DocumentFile`)
-* **CI/CD:** GitHub Actions automated APK compilation
+**UniDeck** is a zero-server, privacy-first academic management app designed for university students who want instant access to their timetable, attendance projections, internal marks, and semester GPA calculations—even with zero network connectivity.
 
 ---
 
-## Building from Source
+## 🚀 Core Features
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/r4hullit69/UniDeck-v2.git](https://github.com/r4hullit69/UniDeck-v2.git)
-   cd UniDeck-v2
+### 📅 Smart Timetable & Daily Timeline
+* **Gesture-Driven Calendar Navigation:** Smooth horizontal week/month navigation aligned to `Sun–Sat` with contextual floating actions.
+* **Live Class Reminders:** Exact-alarm scheduling via `AlarmManager` with automatic reboot recovery (`BootCompletedReceiver`).
+* **Home Screen Widgets:** Glanceable **Next Class**, **Today's Classes**, and **Academic Snapshot** widgets with custom preview layouts.
+
+### 📊 Attendance Tracking & Bunk Projection
+* **Subject-Level Analytics:** Visual attendance breakdown per course, professor tracking, and real-time safe-bunk / recovery-class math (`AcademicCalculator`).
+* **Semester-Aware Projections:** Accurate upcoming class counts that respect semester boundaries and holiday overrides.
+
+### 🎯 Grades, Scores & Fractional-Credit GPA
+* **Internal & Exam Score Logs:** Track quizzes, mid-sems, labs, and end-semester assessments per subject.
+* **Precision SGPA / CGPA Engine:** Supports fractional course credits (e.g., `1.5`, `2.5`, `3.5`) with instant target-grade simulation.
+
+### 🎨 Material You Expressive UI & AMOLED Theme
+* **Dynamic Monet Theming:** Adapts automatically to Android 12+ wallpaper palettes alongside curated static themes.
+* **True Pitch-Black (`#000000`) AMOLED Mode:** Battery-friendly dark mode across all screens, charts, and widgets.
+* **30+ Custom Adaptive App Icons:** Switchable launcher icons (`AppIconManager`) including minimalist, monochrome, botanical, and animal presets.
+
+### 🔒 100% Offline-First & Portable Backups
+* **Local Persistence:** Powered by **Room** (SQLite) and **Jetpack DataStore**—no accounts, cloud lock-in, or telemetry.
+* **Automated & Manual Backups:** One-tap JSON/database export via Android Storage Access Framework (`BackupManager`) plus scheduled background backups via **WorkManager** (`DailyBackupWorker`).
+
+---
+
+## 🛠️ Architecture & Tech Stack
+
+| Layer | Technology |
+| :--- | :--- |
+| **Language** | Kotlin |
+| **UI Framework** | Jetpack Compose + Material 3 (Expressive components & custom Canvas charts) |
+| **Local Database** | Room (`UniDeckDatabase`, `UniDeckDao`) |
+| **Preferences** | Jetpack DataStore (`UserPreferencesRepository`) |
+| **Background Work** | WorkManager (`DailyBackupWorker`) & `AlarmManager` (`ReminderScheduler`) |
+| **Build System** | Gradle Kotlin DSL (`build.gradle.kts`, Version Catalog `libs.versions.toml`) |
+| **CI / Delivery** | GitHub Actions (`build-apk.yml`) & GitHub Releases |
+
+---
+
+## 📂 Project Structure
+
+```text
+app/src/main/java/com/unideck/app/
+├── backup/          # Storage Access Framework export/import & WorkManager daily backups
+├── data/
+│   ├── local/       # Room entities, DAOs, and database setup
+│   ├── prefs/       # DataStore theme, semester, and user settings
+│   └── repository/  # Single source of truth repository layer
+├── domain/          # Fractional-credit GPA & attendance projection calculators
+├── notifications/   # Exact class reminders and boot persistence receivers
+├── system/          # Dynamic launcher icon switcher
+├── ui/
+│   ├── components/  # Custom Canvas charts, timeline cards, pickers, haptics
+│   ├── screens/     # Attendance, Timetable, Grades, Scores, Analytics, Appearance
+│   └── theme/       # Material 3 dynamic colors, pitch-black AMOLED scheme, typography
+└── widget/          # Android home screen app widgets
