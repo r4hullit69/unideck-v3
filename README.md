@@ -18,7 +18,31 @@
 
 UniDeck is a local-first university utility built for fast, distraction-free tracking of daily schedules, attendance thresholds, internal assessments, and semester GPA. All data is persisted on-device via Room and Jetpack DataStore with zero external servers, accounts, or telemetry.
 
+
 ---
+
+## Disclaimer
+
+* **AI-Assisted ("Vibecoded") Project:** UniDeck is an independent, non-commercial student project built through AI-assisted ("vibecoded") development. While tested for daily personal use, it is provided **"as is"** without warranty of any kind—please take regular backups via **Settings → Backup & Restore**.
+* **No Affiliation:** This project is **not affiliated with, endorsed by, or connected to `unideck.app`** or any other product, service, or trademark sharing a similar name. The `com.unideck.app` package identifier and project name are used strictly for a free, open-source personal utility. If you represent `unideck.app` and have any trademark or naming concerns, please open an issue on this repository and the project name/package ID will be updated promptly.
+
+
+
+
+---
+## Previews
+
+<p align="center">
+  <img src="preview/Screenshot_2026-11-27-18-21-12-752_com.unideck.app.png" width="30%" alt="UniDeck Screenshot 1" />
+  <img src="preview/Screenshot_2026-11-27-18-21-29-816_com.unideck.app.png" width="30%" alt="UniDeck Screenshot 2" />
+  <img src="preview/Screenshot_2026-11-27-18-21-42-090_com.unideck.app.png" width="30%" alt="UniDeck Screenshot 3" />
+</p>
+<p align="center">
+  <img src="preview/Screenshot_2026-11-27-18-21-54-646_com.unideck.app.png" width="30%" alt="UniDeck Screenshot 4" />
+  <img src="preview/Screenshot_2026-11-27-18-22-39-677_com.unideck.app.png" width="30%" alt="UniDeck Screenshot 5" />
+  <img src="preview/Screenshot_2026-11-27-18-23-03-091_com.unideck.app.png" width="30%" alt="UniDeck Screenshot 6" />
+</p>
+
 
 ## Features
 
